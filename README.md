@@ -4,7 +4,7 @@ AlgoRide is a system design by ANN and Reinforcement Learning for Trading in cry
 
 ## 1) section crawling
 > we work on many site like
-  -  https://www.cryptoquant.com/
+  -  https://www.cryptoquant.com/    Working on it
   -  https://www.coinglass.com/
   -  https://www.coindesk.com/
   -  https://www.cointelegraph.com/
