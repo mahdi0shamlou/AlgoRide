@@ -15,11 +15,12 @@ class CrawlerBitinfoCharts():
             print(f'Error in Get main page Html txt And Error is : {e}')
             return -1
     def Parse_html_main_page(self, html_txt:str):
+        print('------ section parse html txt of main page ------')
         soup = BeautifulSoup(html_txt, "lxml")
         elements = soup.select('tr[id^="t_total"] td')
-        print(len(elements))
+        print(type(elements))
         for e in elements:
-            print(e)
+            print(e.get_text())
 
 
 test_obj = CrawlerBitinfoCharts()
