@@ -17,6 +17,6 @@ AlgoRide is a system design by ANN and Reinforcement Learning for Trading in cry
   -  coinglass
   -  coindesk
   -  cointelegraph
-  -  bitinfocharts    working on it.
+  -  bitinfocharts    /STATUS : working on it.
   -  blockchaincenter
 
