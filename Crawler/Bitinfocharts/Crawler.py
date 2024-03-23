@@ -17,9 +17,13 @@ class CrawlerBitinfoCharts():
     def Parse_html_main_page(self, html_txt:str):
         print('------ section parse html txt of main page ------')
         soup = BeautifulSoup(html_txt, "lxml")
-        elements = soup.select('tr[id^="t_total"] td')
-        print(type(elements))
-        for e in elements:
+        elements_t_total = soup.select('tr[id^="t_total"] td') # number of Crypto
+        elements_t_price = soup.select('tr[id^="t_price"] td') # Price of crypto
+        elements_t_cap = soup.select('tr[id^="t_cap"] td')  # market cap of crypto
+        #elements_s = soup.select('tr td')
+        #print(len(elements_s))
+        print(len(elements_t_cap))
+        for e in elements_t_cap:
             print(e.get_text())
 
 
